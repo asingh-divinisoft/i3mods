@@ -2,6 +2,8 @@
 i3 configs / setups
 
 ## Downloads
+- [FontAwesome](https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started)
+    - Install all OTFs
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
     - [Ipykernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
 - [Docker](https://docs.docker.com/engine/install/ubuntu/)
