@@ -53,4 +53,7 @@ flatpak install flathub us.zoom.Zoom
 echo "Installing flathub VSCode..."
 flatpak install flathub com.visualstudio.code
 
+echo "Installing OBS..."
+flatpak install flathub com.obsproject.Studio
+
 echo "Install these yourself\nDocker\nOnlyOffice\nMiniconda"
