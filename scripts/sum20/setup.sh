@@ -15,7 +15,7 @@ echo "Updating..."
 sudo apt-get update
 
 echo "Installing general packages..."
-sudo apt install -y i3 git jq build-essential neovim curl bash-completion pigz p7zip-full net-tools flatpak zsh tmux rofi chromium-browser mpv vlc node-js bat exa libdbus-1-dev pkg-config libssl-dev feh exiftool imagemagick gnome-tweaks xchm fonts-font-awesome gnome-screensaver
+sudo apt install -y i3 git jq build-essential neovim curl bash-completion pigz p7zip-full net-tools flatpak zsh tmux rofi chromium-browser mpv vlc node-js bat exa libdbus-1-dev pkg-config libssl-dev feh exiftool imagemagick gnome-tweaks xchm fonts-font-awesome gnome-screensaver gnome-flashback
 
 echo "Installing vim-plug..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
