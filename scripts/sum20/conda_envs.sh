@@ -1,5 +1,5 @@
-conda create -n jupy jupyterlab jupytext
-conda create -n web -c conda-forge python ipython ipykernel beautifulsoup selenium requests tqdm pandas
+conda create -n jupy -c conda-forge jupyterlab jupytext -y
+conda create -n web -c conda-forge python ipython ipykernel beautifulsoup selenium requests tqdm pandas -y
 
 rustup component add rust-src
 sudo apt install jupyter-notebook cmake build-essential
