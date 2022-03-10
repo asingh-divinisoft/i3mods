@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/user01/.oh-my-zsh"
 
@@ -76,6 +76,7 @@ plugins=(git zsh-autosuggestions dirhistory)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
