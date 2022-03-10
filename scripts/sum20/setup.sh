@@ -15,7 +15,7 @@ echo "Updating..."
 sudo apt-get update
 
 echo "Installing general packages..."
-sudo apt install -y i3 git jq build-essential cmake neovim curl bash-completion pigz p7zip-full net-tools flatpak zsh tmux rofi chromium-browser mpv vlc nodejs bat exa libdbus-1-dev pkg-config libssl-dev feh exiftool imagemagick gnome-tweaks xchm fonts-font-awesome gnome-screensaver gnome-flashback fonts-powerline
+sudo apt install -y i3 git jq build-essential cmake neovim curl bash-completion pigz p7zip-full net-tools flatpak zsh tmux rofi chromium-browser mpv vlc nodejs bat exa ripgrep libdbus-1-dev pkg-config libssl-dev feh exiftool imagemagick gnome-tweaks xchm fonts-font-awesome gnome-screensaver gnome-flashback fonts-powerline
 
 echo "Installing vim-plug..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -24,7 +24,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 echo "Downloading zsh plugins..."
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-echo "Add zsh-completions dirhistory yourself in ~/.zshrc.\nYou don't need to download those"
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
+echo "Add dirhistory yourself in ~/.zshrc.\nYou don't need to download that"
 
 echo "Installing rustup"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -58,4 +59,4 @@ flatpak install flathub us.zoom.Zoom
 echo "Installing OBS..."
 flatpak install flathub com.obsproject.Studio
 
-echo "Install these yourself\nDocker\nOnlyOffice\nMiniconda\nVS Code"
+echo "Install these yourself\nDocker\nOnlyOffice\nMiniconda\nVS Code\nPyCharm"
