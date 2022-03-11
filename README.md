@@ -1,6 +1,12 @@
 # i3mods
 i3 configs / setups
 
+## Might forget
+- SSH Randomart
+    -  Visualisation of Fingerprint of Public Key
+        -  Helpful for detecting host change / man-in-the-middle attack
+    -  Disabled by default, can be enable in the config file
+
 ## Downloads
 - [FontAwesome](https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started)
     - Install all OTFs
