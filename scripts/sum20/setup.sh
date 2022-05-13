@@ -23,6 +23,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 echo "Downloading zsh plugins..."
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+export ZSH_CUSTOM=${HOME}/.oh-my-zsh/custom
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
 echo "Add dirhistory yourself in ~/.zshrc.\nYou don't need to download that"
