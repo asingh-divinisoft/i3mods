@@ -50,6 +50,7 @@ gsettings set org.gnome.gnome-flashback desktop false
 echo "installing i3status-rust..."
 git clone https://github.com/greshake/i3status-rust ~/Downloads/i3status-rust
 cd ~/Downloads/i3status-rust
+# sudo apt install libssl-dev libsensors-dev # For Ubuntu 22.04
 cargo install --path .
 ./install.sh
 cd ~
