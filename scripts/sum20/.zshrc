@@ -116,5 +116,10 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+alias cat="batcat"
+alias ls="exa"
+alias ll="exa -l"
+alias du="dust"
+alias cd="z" #zoxide
 
 . "$HOME/.cargo/env"
