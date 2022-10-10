@@ -15,7 +15,7 @@ echo "Updating..."
 sudo apt-get update
 
 echo "Installing general packages..."
-sudo apt install -y i3 git jq build-essential cmake neovim curl bash-completion pigz p7zip-full net-tools flatpak zsh fzf tmux rofi chromium-browser mpv vlc nodejs bat exa ripgrep libdbus-1-dev pkg-config libssl-dev feh exiftool imagemagick gnome-tweaks xchm fonts-font-awesome gnome-screensaver gnome-flashback fonts-powerline guvcview mold
+sudo apt install -y i3 git jq build-essential cmake neovim curl bash-completion pigz p7zip-full net-tools flatpak zsh fzf tmux rofi chromium-browser mpv vlc nodejs bat exa ripgrep libdbus-1-dev pkg-config libssl-dev feh exiftool imagemagick gnome-tweaks xchm fonts-font-awesome gnome-screensaver gnome-flashback fonts-powerline guvcview mold baobab
 
 echo "Installing vim-plug..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -38,6 +38,7 @@ cargo install sccache
 
 echo "Installing procs..."
 cargo install procs
+cargo install du-dust
 
 echo "Setting flatpak remote..."
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
