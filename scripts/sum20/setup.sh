@@ -31,6 +31,9 @@ git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 echo "Add dirhistory yourself in ~/.zshrc.\nYou don't need to download that"
 
+echo "Installing fuzzy-cd..."
+curl -Ls get.dannyb.co/fuzzycd/setup | bash
+
 echo "Installing rustup"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
